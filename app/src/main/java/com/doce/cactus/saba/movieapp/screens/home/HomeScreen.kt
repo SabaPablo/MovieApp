@@ -15,7 +15,10 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.RectangleShape
+import androidx.compose.ui.text.TextStyle
+import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.unit.dp
+import androidx.compose.ui.unit.sp
 import androidx.navigation.NavController
 import com.doce.cactus.saba.movieapp.model.Movie
 import com.doce.cactus.saba.movieapp.model.getMovies
@@ -26,9 +29,9 @@ import com.doce.cactus.saba.movieapp.widgets.MovieRow
 fun HomeScreen(navController: NavController) {
 
     Scaffold(topBar = {
-        TopAppBar(backgroundColor = Color.LightGray,
-            elevation = 5.dp) {
-            Text(text = "Movies")
+        TopAppBar(backgroundColor = Color.Transparent,
+            elevation = 0.dp) {
+            Text(text = "Movies", style = TextStyle(fontSize = 30.sp ,fontWeight = FontWeight.Bold))
         }
 
     }) {
